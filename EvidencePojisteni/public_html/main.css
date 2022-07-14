@@ -7,3 +7,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Author     : admin
 */
 
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required {
+  background-color: lightcoral;
+}
+
+input:valid {
+  border: 1px solid black;
+}
