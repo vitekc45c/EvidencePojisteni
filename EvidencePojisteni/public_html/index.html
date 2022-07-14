@@ -14,7 +14,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 	<body>
 	<div class="nav">
             <ul>
-                <li><a hreft="">Pojištení App</a></<li>
+                <li><a href="">Pojištení App</a></<li>
                 <li><a href="clients.html">Pojištencí</a></li>
 		<li><a href="insurance">Pojištění</a></li>
 		<li><a href="log.html">Události</a></li>
@@ -26,19 +26,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 		<div class="content">
 		<pre>
 			<form action="addClient.php" method="post" name="addClient">
-			<p>Jméno</p>
+			<label>Jméno</label>
 			<input type="text" id="firstName" name="firstName" placeholder="Jméno" required />
-			<p>Příjmení</p>
+			<label>Příjmení</label>
 			<input type="text" id="lastName" name="lastName" placeholder="Příjmení" required />
-			<p>Email</p>
+			<label>Email</label>
                         <input type="email" id="email" name="email" placeholder="email@example.com" required />
-                        <p>Telefon</p>
+                        <label>Telefon</label>
 			<input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+xxx xxx xxx xxx" required />
-                        <p>Ulice a číslo popisné</p>
+                        <label>Ulice a číslo popisné</label>
 			<input type="address" id="address" name="address" placeholder="Ulice a čislo popisné" required />
-                        <p>Město</p>
+                        <label>Město</label>
 			<input type="city" id="city" name="city" placeholder="Město" required />
-                        <p>PSČ</p>
+                        <label>PSČ</label>
 			<input type="postalCode" id="postalCode" name="postalCode" placeholder="PSČ" required />
 			<input type="submit" id="submit" value="Uložit" />
 			</form>
