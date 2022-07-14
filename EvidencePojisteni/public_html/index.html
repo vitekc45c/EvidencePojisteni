@@ -3,13 +3,45 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="width=device-width, intial-scale=1.0" />
+		<title>Nový pojištenec</title>
+		<link rel="stylesheet" href="main.css" />
+		<link rel="icon" type="image/x-icon" href="" />
+	</head>
+	<body>
+	<div class="nav">
+            <ul class="nomargin">
+		<a href="clients.html">Pojištencí</a>
+		<a href="insurance">Pojištění</a>
+		<a href="log.html">Události</a>
+		<a href="about.html">O aplikaci...</a>
+                <a href="login.html">Přihlásit</a>
+                <a href="register.html">Registrovat</a>
+            </ul>
+	</div>
+		<div class="content">
+		<pre>
+			<form action="addClient.php" method="post" name="addClient">
+			<p>Jméno</p>
+			<input type="text" id="firstName" name="firstName" placeholder="Jméno" required />
+			<p>Příjmení</p>
+			<input type="text" id="lastName" name="lastName" placeholder="Příjmení" required />
+			<p>Email</p>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required />
+                        <p>Telefon</p>
+			<input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+xxx xxx xxx xxx" required />
+                        <p>Ulice a číslo popisné</p>
+			<input type="address" id="address" name="address" placeholder="Ulice a čislo popisné" required />
+                        <p>Město</p>
+			<input type="city" id="city" name="city" placeholder="Město" required />
+                        <p>PSČ</p>
+			<input type="postalCode" id="postalCode" name="postalCode" placeholder="PSČ" required />
+			<input type="submit" id="submit" value="Uložit" />
+			</form>
+		</pre>
+                </div>
+	</body>
 </html>
