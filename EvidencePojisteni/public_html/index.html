@@ -10,6 +10,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 		<title>Nový pojištenec</title>
 		<link rel="stylesheet" href="main.css" />
 		<link rel="icon" type="image/x-icon" href="" />
+                <script defer src="mainJavascript.js" charset="utf-8"></script>
 	</head>
 	<body>
 	<div class="nav">
@@ -24,7 +25,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </ul>
 	</div>
 		<div class="content">
-		<pre>
+		<div class="form">
 			<form action="addClient.php" method="post" name="addClient">
 			<label>Jméno</label>
 			<input type="text" id="firstName" name="firstName" placeholder="Jméno" required />
@@ -40,9 +41,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 			<input type="city" id="city" name="city" placeholder="Město" required />
                         <label>PSČ</label>
 			<input type="postalCode" id="postalCode" name="postalCode" placeholder="PSČ" required />
-			<input type="submit" id="submit" value="Uložit" />
+			<input type="button" id="submit" value="Uložit" />
 			</form>
-		</pre>
+		</div>
                 </div>
 	</body>
 </html>
