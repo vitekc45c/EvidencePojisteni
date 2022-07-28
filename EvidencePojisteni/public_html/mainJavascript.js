@@ -21,3 +21,14 @@ let city = form.elements['city'];
 let city = city.value;
 let postalCode = form.elements['postalCode'];
 let postalCode = postalCode.value;
+
+var formdata = 'firstName' + firstName + '&email' + email + '&address' + address + '&lastName' + lastName + '&phoneNumber' + phoneNumber + '&city' + city + '&postalCode' + postalCode;
+$.ajax({
+		 type: "POST",
+		 url: "storeempdata.php",
+		 data: formdata,
+		 cache: false,
+		 success: function(html) {
+		  alert(html);
+		 }
+	});
