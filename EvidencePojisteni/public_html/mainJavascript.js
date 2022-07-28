@@ -6,3 +6,18 @@
 
 let content = document.getElementById();
 fetch();
+let form = document.getElementById('addClient');
+let firstName = form.elements['firstName'];
+let firstName = firstName.value;
+let email = form.elements['email'];
+let email = email.value;
+let address = form.elements['address'];
+let address = address.value;
+let lastName = form.elements['lastName'];
+let lastName = lastName.value;
+let phoneNumber = form.elements['phoneNumber'];
+let phoneNumber = phoneNumber.value;
+let city = form.elements['city'];
+let city = city.value;
+let postalCode = form.elements['postalCode'];
+let postalCode = postalCode.value;
