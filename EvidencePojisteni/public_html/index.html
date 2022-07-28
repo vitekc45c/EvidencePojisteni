@@ -25,6 +25,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </ul>
 	</div>
 		<div class="content">
+                    <div class="formLabel">
+                        <h2>Nový pojištěnec</h2>
+                    </div>    
 		<form action="addClient.php" method="post" name="addClient">
                     <div class="form">
 			<div class="form-row">
@@ -33,7 +36,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="email@example.com" required />
                             <label for="address">Ulice a číslo popisné</label>
-                            <input type="address" id="address" name="address" placeholder="Ulice a čislo popisné" required />
+                            <input type="text" id="address" name="address" placeholder="Ulice a čislo popisné" required />
                         </div>
                         <div class="form-row">
                             <label for="lastName">Příjmení</label>
@@ -41,9 +44,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             <label for="phoneNumber">Telefon</label>
                             <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+xxx xxx xxx xxx" required />
                             <label for="city">Město</label>
-                            <input type="city" id="city" name="city" placeholder="Město" required />
+                            <input type="text" id="city" name="city" placeholder="Město" required />
                             <label for="postalCode">PSČ</label>
-                            <input type="postalCode" id="postalCode" name="postalCode" placeholder="PSČ" required />
+                            <input type="number" id="postalCode" name="postalCode" placeholder="PSČ" required />
                             <input type="button" id="submit" value="Uložit" />
                         </div>
                     </div>
