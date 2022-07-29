@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="width=device-width, intial-scale=1.0" />
+		<title>Nový pojištenec</title>
+		<link rel="stylesheet" href="main.css" />
+		<link rel="icon" type="image/x-icon" href="" />
+                <script defer src="mainJavascript.js" charset="utf-8"></script>
+	</head>
+	<body>
+	<div class="nav">
+            <ul>
+                <li><a href="index.html">Pojištení App</a></li>
+                <li><a href="clients.html">Pojištencí</a></li>
+		<li><a href="insurance.html">Pojištění</a></li>
+		<li><a href="log.html">Události</a></li>
+		<li><a href="about.html">O aplikaci...</a></li>
+                <li><a href="login.html">Přihlásit</a></li>
+                <li><a href="register.html">Registrovat</a></li>
+            </ul>
+	</div>
+		<div class="content">
+                    <div class="formLabel">
+                        <h2>Nový pojištěnec</h2>
+                    </div>    
+		<form action="addClient.php" method="post" id="addClient">
+                    <div class="form">
+			<div class="form-row">
+                            <label for="firstName">Jméno</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Jméno" required /> 
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="email@example.com" required />
+                            <label for="address">Ulice a číslo popisné</label>
+                            <input type="text" id="address" name="address" placeholder="Ulice a čislo popisné" required />
+                        </div>
+                        <div class="form-row">
+                            <label for="lastName">Příjmení</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Příjmení" required />
+                            <label for="phoneNumber">Telefon</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+xxx xxx xxx xxx" required />
+                            <label for="city">Město</label>
+                            <input type="text" id="city" name="city" placeholder="Město" required />
+                            <label for="postalCode">PSČ</label>
+                            <input type="number" id="postalCode" name="postalCode" placeholder="PSČ" required />
+                            <input type="button" id="submit" value="Uložit" />
+                        </div>
+                    </div>
+                </form>
+                </div>
+	</body>
+</html>
