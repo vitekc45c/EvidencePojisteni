@@ -10,7 +10,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 		<title>Nový pojištenec</title>
 		<link rel="stylesheet" href="../main.css" />
 		<link rel="icon" type="image/x-icon" href="" />
-                <script defer src="../javascript/mainJavascript.js" charset="utf-8"></script>
+                <script defer src="../../javascript/JS_AddClient.js" charset="utf-8"></script>
 	</head>
 	<body>
 	<div class="nav">
@@ -48,7 +48,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     <div class="formLabel">
                         <h2>Nový pojištěnec</h2>
                     </div>    
-		<form action="addClient.php" method="post" id="addClient">
+		<form>
                     <div class="form">
 			<div class="form-row">
                             <label for="firstName">Jméno</label>
@@ -67,7 +67,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                             <input type="text" id="city" name="city" placeholder="Město" required />
                             <label for="postalCode">PSČ</label>
                             <input type="number" id="postalCode" name="postalCode" placeholder="PSČ" required />
-                            <input type="button" id="submit" value="Uložit" />
+                            <input type="submit" onclick="addClient()" id="addClientButton" class="button" value="Uložit"/>
                         </div>
                     </div>
                 </form>
