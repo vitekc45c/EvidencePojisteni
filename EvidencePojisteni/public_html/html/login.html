@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+        <head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="width=device-width, intial-scale=1.0" />
+		<title>Nový pojištenec</title>
+                <link rel="icon" type="image/x-icon" href="" />
+		<link rel="stylesheet" href="../main.css" />
+                <script defer src="../../cripts/php_login.php" charset="utf-8"></script>
+	</head>
+	<body>
+	<div class="nav">
+            <ul>
+                <li><a href="index.html">Pojištení App</a></li>
+                <li><a href="clients.html">Pojištencí</a></li>
+		<li><a href="insurance.html">Pojištění</a></li>
+		<li><a href="log.html">Události</a></li>
+		<li><a href="about.html">O aplikaci...</a></li>
+                <li><a href="login.html">Přihlásit</a></li>
+                <li><a href="register.html">Registrovat</a></li>
+            </ul>
+	</div>
+		<div class="content">
+                    <div class="formLabel">
+                        <h2>Přihlášení</h2>
+                    </div>    
+		<form>
+                    <div class="form">
+                        <div class="form-row">
+                            <label for="lastName">Uživatelské jméno</label>
+                            <input type="text" id="usertName" name="userName" placeholder="Uživatelské jméno" required />
+                            <label for="phoneNumber">Telefon</label>
+                            <input type="password" id="password" name="password" placeholder="Heslo" required />
+                            <input type="submit" onclick="addClient()" id="addClientButton" class="button" value="Uložit"/>
+                        </div>
+                    </div>
+                </form>
+                </div>
+	</body>
+</html>
