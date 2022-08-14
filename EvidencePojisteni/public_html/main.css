@@ -6,6 +6,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Created on : 24. 5. 2022, 15:17:21
     Author     : admin
 */
+*{
+    font-family: sans-serif;
+}
 /*
     Navigacni menu
 */
@@ -49,6 +52,7 @@ li a:hover:not(.active) {
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+    text-decoration: none;
 }
 
 /*
@@ -61,6 +65,7 @@ input {
     border: 2px solid gray;
     border-radius: 5px;
 }
+/*
 input[type=button] {
     width: 45%;
     padding: 10px 15px;
@@ -68,6 +73,7 @@ input[type=button] {
     color: white;
     background-color: #24a0ed;
 }
+*/
 .form, .formLabel, .clientTableLabel, .clientTable {
     margin-top: 2rem;
     display: flex;
@@ -87,9 +93,15 @@ input[type=button] {
     margin-right: 20px;
 }
 .button{
+    width: 45%;
+    padding: 10px 15px;
+    margin: 5px 5px;
+    color: white;
+    background-color: #24a0ed;
     color: white;
     background-color: rgb(0, 150, 255);
     border: 1px darkblue solid;
+    border-radius: 5px;
 }
 .button:active{
     background-color: rgb(0, 0, 0);
