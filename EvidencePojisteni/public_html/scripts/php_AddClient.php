@@ -1,12 +1,5 @@
 <?php
- $servername='localhost:5432';
- $username='admin';
- $password='12345';
- $dbname = "clients";
- $conn=mysqli_connect($servername,$username,$password,"$dbname");
- if(!$conn){
-    die('Could not Connect MySql Server:' .mysql_error());
-    }
+$mysqli = require __DIR__ . "../php_databaseConnect.php";
 $firstName = $_POST["firstName"];
 $email = $_POST["email"];
 $address = $_POST["address"];
