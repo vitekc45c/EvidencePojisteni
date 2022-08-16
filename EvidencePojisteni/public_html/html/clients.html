@@ -45,6 +45,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                             </tr>
                         </table>
                     </div>
+                        <div class="databaseTest">
+                            <script type="text/javascript" src="jquery.js"></script>
+                            <script type="text/javascript">
+                            function reloadNames() {
+                                var url = "php_loadClient.php?t=" + (new Date()).getTime();
+                                jQuery("#names").load(url);
+                            }
+                            jQuery(function() {
+                                setInterval(reloadNames, 5000);
+                            });
+                            </script>
+                            <div id="names"></div>
+                        </div>    
                     <div class="formLabel">
                         <h2>Nový pojištěnec</h2>
                     </div>    
