@@ -5,8 +5,8 @@ if (empty($_POST["userName"])) {
 if ( ! filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
     die("Chybný email");
 }
-if (strlen($_POST["password"]) < 3) {
-    die("Heslo musí mít alespoň 3 znaky");
+if (strlen($_POST["password"]) < 8) {
+    die("Heslo musí mít alespoň 8 znaků");
 }
 $servername='localhost:5432';
 $username='admin';
