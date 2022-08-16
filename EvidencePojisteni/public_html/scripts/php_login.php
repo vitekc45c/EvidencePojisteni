@@ -19,22 +19,14 @@ if(!$conn){
 print_r($POST);
     $sql = sprintf("SELECT * FROM userDatabase
                     WHERE email = '%s'",
-                   $mysqli->real_escape_string($_POST["email"]));
-    
+                   $mysqli->real_escape_string($_POST["email"])); 
     $result = $mysqli->query($sql);
-    
     $user = $result->fetch_assoc();
-    
     if ($user) {
-        
         if (password_verify($_POST["password"], $user["password_hash"])) {
-            
-            session_start();
-            
-            session_regenerate_id();
-            
-            $_SESSION["user_id"] = $user["id"];
-            
+            session_start();           
+            session_regenerate_id();          
+            $_SESSION["user_id"] = $user["id"];          
             header("Location: index.php");
             exit;
         }
