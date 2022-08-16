@@ -12,5 +12,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   `userName` varchar(50) NOT NULL AUTO_INCREMENT,
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
+  `passwordHash` varchar(50) NOT NULL,
   PRIMARY KEY (`user_id`)
 )
