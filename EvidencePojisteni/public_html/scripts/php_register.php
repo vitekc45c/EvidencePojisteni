@@ -18,14 +18,7 @@ if ($_POST["password"] !== $_POST["password_confirmation"]) {
     die("Chybné potvrzení");
 }
 $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
-$servername='localhost:5432';
-$username='admin';
-$password='12345';
-$dbname = "users";
-$conn=mysqli_connect($servername,$username,$password,"$dbname");
-if(!$conn){
-   die('Could not Connect MySql Server:' .mysql_error());
-   }
+$mysqli = require __DIR__ . "../php_databaseConnect.php";
 $sql = "INSERT INTO userDatabase (name, email, password_hash)
         VALUES (?, ?, ?)";
 $stmt = $mysqli->stmt_init();
