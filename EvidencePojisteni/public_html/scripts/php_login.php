@@ -16,7 +16,6 @@ $conn=mysqli_connect($servername,$username,$password,"$dbname");
 if(!$conn){
    die('Could not Connect MySql Server:' .mysql_error());
    }
-print_r($POST);
     $sql = sprintf("SELECT * FROM userDatabase
                     WHERE email = '%s'",
                    $mysqli->real_escape_string($_POST["email"])); 
