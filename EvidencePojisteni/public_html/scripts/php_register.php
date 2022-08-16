@@ -9,13 +9,13 @@ if (strlen($_POST["password"]) < 3) {
     die("Heslo musí mít alespoň 3 znaky");
 }
 if ( ! preg_match("/[a-z]/i", $_POST["password"])) {
-    die("Password must contain at least one letter");
+    die("Heslo musí obsahovat minimálně jedno písmeno");
 }
 if ( ! preg_match("/[0-9]/", $_POST["password"])) {
-    die("Password must contain at least one number");
+    die("Heslo musí obsahovat minimálně jedno číslo");
 }
 if ($_POST["password"] !== $_POST["password_confirmation"]) {
-    die("Passwords must match");
+    die("Chybné potvrzení");
 }
 $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
 $servername='localhost:5432';
