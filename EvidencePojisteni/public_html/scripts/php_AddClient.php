@@ -1,4 +1,4 @@
-<?php
+<?php header('Content-type: text/html; charset=utf-8');
 $mysqli = require __DIR__ . "../php_databaseConnect.php";
 $firstName = $_POST["firstName"];
 $email = $_POST["email"];
