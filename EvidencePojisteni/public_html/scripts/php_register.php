@@ -1,4 +1,4 @@
-<?php
+<?php header('Content-type: text/html; charset=utf-8');
 if (empty($_POST["userName"])) {
     die("Jméno nemůže být prázdné");
 }
