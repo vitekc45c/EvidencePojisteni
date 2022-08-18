@@ -36,7 +36,18 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                                 <th></th>
                             </tr>
                             <tr>
-                                <td>Test jmeno</td>
+                                <td>
+                                    <?php header('Content-type: text/html; charset=utf-8');
+                                       $mysqli = require __DIR__ . "../php_databaseConnect.php";
+                                       $sql = "SELECT * FROM clientDatabase";
+                                       $result = mysqli_query($sql);
+                                       if (mysqli_num_row($result) > 0) {
+                                       
+                                       } else {
+                                            echo "Žádní clienti k zobrazení";
+                                       }
+                                    ?>
+                                </td>
                                 <td>Test adreasa</td>
                                 <td>
                                     <input type="button" id="delete" value="Odstranit" />
