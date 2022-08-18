@@ -74,7 +74,7 @@ input[type=button] {
     background-color: #24a0ed;
 }
 */
-.form, .formLabel, .clientTableLabel, .clientTable {
+.form, .formLabel, .clientTableLabel, .clientTable, .insuranceTableLabel, insuranceTable {
     margin-top: 2rem;
     display: flex;
     width: 40%;
