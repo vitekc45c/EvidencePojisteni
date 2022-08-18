@@ -42,7 +42,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                                        $sql = "SELECT * FROM clientDatabase";
                                        $result = mysqli_query($sql);
                                        if (mysqli_num_row($result) > 0) {
-                                       
+                                            while ($row = mysqli_fetch_assoc($result)) {
+                                            echo "<p>";
+                                            echo $row['firstName + lastName'];
+                                            echo "<br>";
+                                            echo $row['address + city'];
+                                            echo "</p>";
+                                            }
                                        } else {
                                             echo "Žádní clienti k zobrazení";
                                        }
