@@ -10,7 +10,7 @@ $postalCode = $_POST["postalCode"];
 
 var_dump($firstName, $email, $address. $lastName, $phoneNumber, $city, $postalCode);
 
-$sql = "INSERT INTO clients (firstName,email,address,lastName,phoneNumber,city,postalCode)
+$sql = "INSERT INTO clientDatabse (firstName,email,address,lastName,phoneNumber,city,postalCode)
      VALUES ('$fistName','$email','$address','$lastName','$phoneNumer','$city','$postalCode')";
      if (mysqli_query($conn, $sql)) {
         echo "New record has been added successfully !";
