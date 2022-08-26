@@ -8,7 +8,8 @@
  */
 
 CREATE TABLE IF NOT EXISTS `insurance` (
-  `insuranceID` varchar(50) NOT NULL AUTO_INCREMENT,
+  `insuranceID` int(50) NOT NULL AUTO_INCREMENT,
   `type` varchar(50) NOT NULL,
+  `amount` varchar(50) NOT NULL,
   PRIMARY KEY (`insurance_id`)
 )
