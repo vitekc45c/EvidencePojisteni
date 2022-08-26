@@ -8,7 +8,7 @@ if ( ! filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
 if (strlen($_POST["password"]) < 8) {
     die("Heslo musí mít alespoň 8 znaků");
 }
-   $mysqli = require __DIR__ . "../php_databaseConnect.php";
+   $mysqli = require __DIR__ . "/../php_databaseConnect.php";
     $sql = sprintf("SELECT * FROM userDatabase
                     WHERE email = '%s'",
                    $mysqli->real_escape_string($_POST["email"])); 
