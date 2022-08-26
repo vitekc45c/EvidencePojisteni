@@ -9,15 +9,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 		<meta name="description" content="width=device-width, intial-scale=1.0" />
 		<title>Pojištění</title>
 		<link rel="icon" type="image/x-icon" href="" />
-                <link rel="stylesheet" href="/../main.css" type="text/css">
+                <link rel="stylesheet" href="../main.css" type="text/css">
                 <script defer src="../scripts/JS_addInsurance.js" charset="utf-8"></script>
 	</head>
 	<body>
 	<div class="nav">
             <ul>
                 <li><a href="index.html">Pojištení App</a></li>
-                <li><a href="clients.html">Pojištencí</a></li>
-		<li><a class="active" href="insurance.html">Pojištění</a></li>
+                <li><a href="clients.php">Pojištencí</a></li>
+		<li><a class="active" href="insurance.php">Pojištění</a></li>
 		<li><a href="log.html">Události</a></li>
 		<li><a href="about.html">O aplikaci...</a></li>
                 <li><a href="login.html">Přihlásit</a></li>
