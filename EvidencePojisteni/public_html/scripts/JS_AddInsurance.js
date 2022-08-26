@@ -8,7 +8,7 @@ var con = mysql.createConnection({
   host: "localhost:5432",
   user: "admin",
   password: "12345",
-  database: "clients"
+  database: "insuranceDatabase"
 });
 con.connect(function(err) {
   if (err) throw err;
