@@ -76,7 +76,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     <div class="formLabel">
                         <h2>Nový pojištěnec</h2>
                     </div>    
-		<form action="../scripts/JS_addClient.js" method="post">
+		<form action="/../scripts/JS_addClient.php" method="post">
                     <div class="form">
 			<div class="form-row">
                             <label for="firstName">Jméno</label>
