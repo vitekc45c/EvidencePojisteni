@@ -10,7 +10,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 		<title>Pojištění</title>
 		<link rel="icon" type="image/x-icon" href="" />
                 <link rel="stylesheet" href="../main.css" type="text/css">
-                <script defer src="../scripts/JS_addInsurance.js" charset="utf-8"></script>
+                <script defer src="/../scripts/JS_addInsurance.js" charset="utf-8"></script>
 	</head>
 	<body>
 	<div class="nav">
@@ -37,7 +37,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                             </tr>
                             <tr>
                                 <?php header('Content-type: text/html; charset=utf-8');
-                                $mysqli = require __DIR__ . "../scripts/php_databaseConnect.php";
+                                $mysqli = require __DIR__ . "/../scripts/php_databaseConnect.php";
                                 $sql = "SELECT * FROM insuranceDatabase";
                                 $result = mysqli_query($conn, $sql);
                                     if (mysqli_num_rows($result) > 0) {
@@ -63,7 +63,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     <div class="formLabel">
                         <h2>Nové pojištění</h2>
                     </div>    
-		<form action="../scripts/JS_addInsurance.js" method="post">
+		<form action="/../scripts/JS_addInsurance.php" method="post">
                     <div class="form">
 			<div class="form-row">
                             <label for="type">Typ pojištění</label>
