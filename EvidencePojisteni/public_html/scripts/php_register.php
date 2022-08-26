@@ -18,7 +18,7 @@ if ($_POST["password"] !== $_POST["password_confirmation"]) {
     die("Chybné potvrzení");
 }
 $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
-$mysqli = require __DIR__ . "../php_databaseConnect.php";
+$mysqli = require __DIR__ . "/../php_databaseConnect.php";
 $sql = "INSERT INTO userDatabase (name, email, password_hash)
         VALUES (?, ?, ?)";
 $stmt = $mysqli->stmt_init();
