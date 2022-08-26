@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="width=device-width, intial-scale=1.0" />
+		<title>Pojištění</title>
+		<link rel="icon" type="image/x-icon" href="" />
+                <link rel="stylesheet" href="../main.css" type="text/css">
+                <script defer src="../scripts/JS_addInsurance.js" charset="utf-8"></script>
+	</head>
+	<body>
+	<div class="nav">
+            <ul>
+                <li><a href="index.html">Pojištení App</a></li>
+                <li><a href="clients.html">Pojištencí</a></li>
+		<li><a class="active" href="insurance.html">Pojištění</a></li>
+		<li><a href="log.html">Události</a></li>
+		<li><a href="about.html">O aplikaci...</a></li>
+                <li><a href="login.html">Přihlásit</a></li>
+                <li><a href="register.html">Registrovat</a></li>
+            </ul>
+	</div>
+		<div class="content">
+                    <div class="insuranceTableLabel">
+                        <h2>Pojištění</h2>
+                    </div>
+                    <div class="insuranceTable">
+                        <table>
+                            <tr>
+                                <th>Pojištění</th>
+                                <th>Částka</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <?php header('Content-type: text/html; charset=utf-8');
+                                $mysqli = require __DIR__ . "../scripts/php_databaseConnect.php";
+                                $sql = "SELECT * FROM insuranceDatabase";
+                                $result = mysqli_query($conn, $sql);
+                                    if (mysqli_num_rows($result) > 0) {
+                                        while ($row = mysqli_fetch_assoc($result)) {
+                                        echo "<td>";
+                                        echo $row['type'];
+                                        echo "</td>";
+                                        echo "<td>";
+                                        echo $row['amount'];
+                                        echo "</td>";
+                                        }
+                                    } else {
+                                        echo "Žádná pojištění k zobrazení";
+                                    }
+                                ?>
+                                <td>
+                                    <input type="button" id="delete" value="Odstranit" />
+                                    <input type="button" id="eddit" value="Editovat" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="formLabel">
+                        <h2>Nové pojištění</h2>
+                    </div>    
+		<form action="../scripts/JS_addInsurance.js" method="post">
+                    <div class="form">
+			<div class="form-row">
+                            <label for="type">Typ pojištění</label>
+                            <input type="text" id="type" name="type" placeholder="Typ pojištění" required /> 
+                        </div>
+                        <div class="form-row">
+                            <label for="amount">Pojistná částka</label>
+                            <input type="text" id="amount" name="amount" placeholder="Pojistná částka" required />
+                            <input type="submit" onclick="addInsurance()" id="addInsuranceButton" class="button" value="Uložit"/>
+                        </div>
+                    </div>
+                </form>
+                </div>
+	</body>
+</html>
