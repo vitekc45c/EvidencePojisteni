@@ -5,7 +5,7 @@ $amount = $_POST["amount"];
 
 var_dump($type, $amount);
 
-$sql = "INSERT INTO insurance (type,amount)
+$sql = "INSERT INTO insuranceDatabase (type,amount)
      VALUES ('$type','$amount')";
      if (mysqli_query($conn, $sql)) {
         echo "New record has been added successfully !";
