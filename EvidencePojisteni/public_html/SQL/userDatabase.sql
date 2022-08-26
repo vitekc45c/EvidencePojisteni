@@ -8,7 +8,7 @@
  */
 
 CREATE TABLE IF NOT EXISTS `users` (
-  `userID` varchar(50) NOT NULL AUTO_INCREMENT,
+  `userID` int(50) NOT NULL AUTO_INCREMENT,
   `userName` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
