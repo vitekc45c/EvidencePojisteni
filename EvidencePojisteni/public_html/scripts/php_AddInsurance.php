@@ -1,5 +1,5 @@
 <?php header('Content-type: text/html; charset=utf-8');
-$mysqli = require __DIR__ . "../php_databaseConnect.php";
+$mysqli = require __DIR__ . "/../php_databaseConnect.php";
 $type = $_POST["type"];
 $amount = $_POST["amount"];
 
