@@ -8,7 +8,7 @@
  */
 
 CREATE TABLE IF NOT EXISTS `client` (
-  `clientID` varchar(50) NOT NULL AUTO_INCREMENT,
+  `clientID` int(50) NOT NULL AUTO_INCREMENT,
   `firstName` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `address` varchar(50) NOT NULL,
