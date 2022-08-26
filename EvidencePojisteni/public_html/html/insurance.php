@@ -9,7 +9,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 		<meta name="description" content="width=device-width, intial-scale=1.0" />
 		<title>Pojištění</title>
 		<link rel="icon" type="image/x-icon" href="" />
-                <link rel="stylesheet" href="../main.css" type="text/css">
+                <link rel="stylesheet" href="/../main.css" type="text/css">
                 <script defer src="../scripts/JS_addInsurance.js" charset="utf-8"></script>
 	</head>
 	<body>
