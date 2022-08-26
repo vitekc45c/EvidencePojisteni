@@ -3,7 +3,7 @@ $servername='localhost:5432';
 $username='admin';
 $password='12345';
 $dbname = "users";
-$db_connection = pg_connect("host=$servername dbname=$dbname user=$username password=$password");
+$conn=mysqli_connect ($servername,$username,$password,"$dbname");
 if(!$conn){
    die('Could not Connect MySql Server:' .mysql_error());
    }
