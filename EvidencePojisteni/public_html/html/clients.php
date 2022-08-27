@@ -37,7 +37,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                             </tr>
                             <tr>
                                 <?php header('Content-type: text/html; charset=utf-8');
-                                $mysqli = require __DIR__ . "/../scripts/php_databaseConnect.php";
+                                $mysqli = require __DIR__ . "../scripts/php_databaseConnect.php";
                                 $sql = "SELECT * FROM clientDatabase";
                                 $result = mysqli_query($conn, $sql);
                                     if (mysqli_num_rows($result) > 0) {
